@@ -2,31 +2,173 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Oleksandr Pozden CV</title>
   </head>
   <body>
-    <header id="header">
+    <div class="progress-container">
+      <div class="progress highlight-bg" id="progress"></div>
+    </div>
+    <div class="resume">
 
-    </header>
-    <main id="main">
-      <div class="resume__left resume">
-        <section>
-          Somethin here LEFT
-        </section>
-        <section>
-          Another section LEFT
-        </section>
-      </div>
-      <div class="resume_rigth resume">
-        <section>
-          sec RIGHT
-        </section>
-        <section>
-          an SEC RIGHT
-        </section>
-      </div>
-    </main>
+      <header id="header">
+        <img src="avatar_squared_161.jpeg" alt="selfie of Oleksandr Pozden">
+        <div class="name-section">
+          <div class="v-line"></div>
+          <div class="name">
+            <h1>Oleksandr Pozden</h1>
+            <h2 class="highlight">Software engineer</h2>
+            <p class="email"><i class="fas fa-envelope black"></i> oleksandr.pozden@gmail.com</p>
+            <div class="contact">
+              <div class="contact__left">
+                <p class=""><i class="fab fa-github"></i> <a
+                  href="https://github.com/OlexandrPozden"
+                  class="link">GitHub</a>
+                </p>
+                <p class=""><i class="fab fa-linkedin"></i> <a
+                  href="https://www.linkedin.com/in/oleksandr-pozden-833526213/"
+                  class="link">Linkedin</a>
+                </p>
+              </div>
+              <div class="contact__right">
+                <p class=" tel-number"><i class="fas fa-phone "></i> 0982234070</p>
+                <p class=" tel-number"><i class="fas fa-phone "></i> 0732261553</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main id="main">
+        <div class="resume__left">
+          <section class="educations">
+            <h3>Education</h3>
+            <div class="h-line"></div>
+            <ul>
+              <li class="education">
+                <img src="lnu.jpg" class="logo" alt="lnu logo">
+                <div class="description">
+                  <h4>System analysis, Faculty of Applied Mathematics and Informatics</h4>
+                  <p class="school">Ivan Franko National University</p>
+                  <p class="issue">September, 2018 - present</p>
+                </div>
+              </li>
+              <li class="education">
+                <img src="softserve.jpg" class="logo" alt="lnu logo">
+                <div class="description">
+                  <h4>SET Crash Course</h4>
+                  <p class="school">Softserve</p>
+                  <p class="issue">Mar. 3, 2020 - May 5, 2020</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="pet-projects">
+            <h3>Pet Projects</h3>
+            <div class="h-line"></div>
+            <ul>
+              <li class="project">
+                <h4>OleksandrPozden/simple-python</h4>
+                <p class="hosted">Hosted on Heroku - <a href="https://oleksandrpozden-simple-python.herokuapp.com/"
+                  class="link">
+                  try it out</a>
+                </p>
+                <p class="repository">Remote repository on GitHub - <a href="https://github.com/OlexandrPozden/simple-python"
+                  class="link">
+                  source code</a>
+                </p>
+                <div class="description">
+                  <p>It is a web application built from scratch on WSGI core using only tools
+                  from the Werkzeug library and SQLAchemy as ORM.</p>
+                  <p><b>Functionality</b>:</p>
+                  <ul class="functionality">
+                    <li>User authentication and authorization</li>
+                    <li>CRUD with posts</li>
+                    <li>Roles - Admin and User</li>
+                    <li>Admin can publish a created post</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="certificates">
+            <h3>Certificates</h3>
+            <div class="h-line"></div>
+            <ul>
+              <li class="certificate">
+                <img src="coursera.jpg" class="logo" alt="coursera logo">
+                <div class="description">
+                  <h4>Front-End Web Development with React</h4>
+                  <p class="school">Coursera</p>
+                  <p class="issue">Issued Dec 27, 2020 · No Expiration Date</p>
+                  <a href="https://coursera.org/share/fa7b8a6b6968a64026b2f955375dea18"
+                   class="credential link">See credential</a>
+                </div>
+                </li>
+              <li class="certificate">
+                <img src="freecodecamp.jpg" class="logo" alt="freecodecamp logo">
+                <div class="description">
+                  <h4>JavaScript Algorithms and Data Structures</h4>
+                  <p class="school">freeCodeCamp</p>
+                  <p class="issue">Issued Oct 28, 2021 · No Expiration Date</p>
+                  <a href="https://www.freecodecamp.org/certification/oleksandrpozden/javascript-algorithms-and-data-structures"
+                    class="credential link">See credential</a>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="resume__right">
+          <section class="skills">
+            <h3>Skills</h3>
+            <div class="h-line"></div>
+            <p><b>Python</b>, <b>JavaScript</b>, HTML, CSS</p>
+            <p><b>Flask</b>, Django, Selenium, BeatifulSoap4, Jinja2, NumPy</p>
+            <p>SASS, Bootstrap</p>
+            <p>PostgreSQL SQLAchemy</p>
+            <p><b>Git</b>, Docker, Linux, Bash</p>
+            <p>Solid, REST, <b>OOP</b></p>
+          </section>
+          <section class="soft-skills">
+            <h3>Soft Skills</h3>
+            <div class="h-line"></div>
+            <p>Friendly, sociable, responsible, team player, result aiming.</p>
+          </section>
+          <section class="languages">
+            <h3>Languages</h3>
+            <div class="h-line"></div>
+            <ul>
+              <li>Ukrainian <small>(Native)</small></li>
+              <li>English <small>(Intermidiate)</small></li>
+              <li>Russian <small>(Fluent)</small></li>
+            </ul>
+          </section>
+          <section class="hobbies">
+            <h3>Hobbies</h3>
+            <div class="h-line"></div>
+            <p class="text-hobbies">
+              <div class="together"><i class="fas fa-running"></i> running</div>,
+              <div class="together"><i class="fas fa-volleyball-ball"></i> voleyball</div>,
+              <div class="together"><i class="fad fa-futbol"></i> football</div>,
+              <div class="together"><i class="fas fa-mountains"></i> hiking</div>,
+              <div class="together"><i class="fas fa-biking"></i> cycling</div>,
+              <div class="together"><i class="fas fa-book-open"></i> reading</div>,
+              <div class="together"><i class="fas fa-users"></i> make new friends</div>.
+            </p>
+          </section>
+        </div>
+
+      </main>
+
+      <footer>
+        designed by Oleksandr Pozden🦁
+      </footer>
+
+    </div>
+
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

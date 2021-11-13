@@ -1,8 +1,289 @@
 /*style.css*/
-body{
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+
+*{
   padding: 0;
   margin: 0;
-  background-color: #;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
-nav{
+body{
+  background-color: #f0f0f0;
+}
+
+
+/* PROGRESS BAR */
+.progress-container{
+  height: 8px;
+  width: 100%;
+  position: fixed;
+  background: rgb(0,0,0,0);
+  top:0;
+  left: 0;
+  z-index: 999;
+}
+.progress{
+  transition: width 0.15s linear;
+  height: 100%;
+  width: 0%;
+}
+
+
+/* RESUME */
+.resume{
+  max-width: 768px;
+  background-color: #FCFCFC;
+  margin: 0 auto;
+  animation: 0.7s ease-out transform;
+  transform: translateY(50px);
+}
+@media only screen and (min-width:768px){
+  @keyframes transform {
+      0%{
+        transform: translateY(0);
+        opacity: 0.1;
+      }
+      100%{
+        transform: translateY(50px);
+        opacity: 1;
+      }
+  }
+}
+@media only screen and (max-width:768px){
+  .resume{
+    transform: translateY(0px);
+  }
+}
+
+
+/* RESUME HEADER*/
+header{
+  padding: 3em 4em 4em 6em;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f5f5f5;
+
+}
+header img{
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+  border: solid 1px white;
+  box-shadow: 2px 2px 4px 1px rgb(0,0,0,0.1)
+}
+header .name-section{
+  display: flex;
+  margin-top: 1em;
+  max-height: 9em;
+  max-width: 40em;
+}
+header .v-line{
+  width: 2px;
+  border-radius: 5px;
+  height: 100%;
+  background-color: black;
+  margin-left: 3em;
+}
+header .name{
+  position: relative;
+  margin-left: 1em;
+}
+header p.email{
+  margin-top: 5px;
+}
+header .contact{
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+header .contact__left, header .contact__right{
+  line-height: 1.5;
+}
+header .contact__right{
+  position: absolute;
+  right: 0;
+}
+@media only screen and (max-width:672px) {
+  header{
+    padding: 3em 2em 4em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .v-line{
+    margin: 0;
+  }
+  header .name{
+    margin: 0;
+  }
+}
+@media only screen and (max-width:416px){
+  header .contact{
+    flex-direction: column;
+  }
+  header .contact__right{
+    position: relative;
+  }
+}
+
+
+/* RESUME MAIN*/
+main{
+  padding: 2em 4em 0 3em;
+}
+
+@media only screen and (max-width: 576px) {
+  main{
+    padding: 2em 1.5em 0 1.5em;
+  }
+}
+
+
+/* RESUME LAYOUT */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main .resume__left,
+main .resume__right{
+  display: flex;
+  flex-direction: column;
+}
+main .resume__left{
+  max-width: 300px;
+  padding-right: 2em;
+}
+main .resume__right{
+  max-width: 180px
+}
+@media only screen and (max-width: 610px) {
+  main .resume__right{
+    max-width: 300px
+  }
+  main .resume__left{
+    padding: 0;
+  }
+}
+
+
+/* RESUME SECTIONS */
+section{
+  padding-bottom: 4em;
+}
+section>ul{
+  list-style: none;
+}
+
+section li.education,
+section li.certificate{
+  display: flex;
+  margin-bottom: 1em;
+}
+section li.education .description,
+section li.certificate .description{
+  padding-left: 8px;
+}
+section .description .school{
+  margin-top: 5px;
+  font-size: 14px;
+}
+section .description .issue{
+  color: #A0A0A0;
+  font-size: 14px;
+}
+section .description .credential{
+  font-size: 14px;
+}
+
+section.pet-projects p{
+  font-size: 14px;
+}
+section .project h4{
+  margin-bottom: 5px;
+}
+section .project p.hosted,
+section .project p.repository{
+  color: #9E9E9E;
+  font-size: 13px;
+}
+section .project .description{
+  margin-top: 5px;
+}
+section .project li{
+  font-size: 13px;
+}
+
+section.skills p,
+section.soft-skills p,
+section.languages ul,
+section.hobbies div{
+  font-size: 14px;
+}
+section.skills p{
+  margin-bottom: 3px;
+}
+section.hobbies{
+  line-height:1.5em;
+}
+section.pet-projects ul.functionality{
+  margin-left: 1em;
+  list-style: "- ";
+}
+
+/* RESUME FOOTER*/
+footer{
+  position: absolute;
+  width: 100%;
+  background-color: #f0f0f0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-size: 11px;
+}
+
+
+/* CUSTOM CLASSES*/
+.highlight{
+  /* a litle bit darker than link color*/
+  color: #E5540C;
+}
+.highlight-bg{
+  background-color:  #E5540C;
+}
+.link{
+  text-decoration: none;
+  color: #F14007;
+}
+.link:hover{
+  text-decoration: underline;
+}
+.h-line{
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: black;
+  margin: 0.5em 0 1em 0;
+}
+/*Every icon has highlighted color*/
+i{
+  color: #E5540C;
+}
+i.black{
+  color: black;
+}
+/* stick icon and text together on the same line*/
+div.together, p.together{
+  display: inline-block;
+  line-height: 1.5;
+}
+img.logo{
+  height: 48px;
+  width: 48px;
+}
+p.tel-number{
+  font-family: sans-serif;
 }
