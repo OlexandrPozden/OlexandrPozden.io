@@ -1,5 +1,5 @@
 // script.js
-const progressBar = document.getElementById('progress'); 
+const progressBar = document.getElementById('progress');
 const body = document.body; // need to get full height of the page
 
 // when user scroll update width of progress bar
